@@ -1,0 +1,70 @@
+h4{
+    color:green;
+    text-align:center;
+}
+.class{
+    text-align:center;
+}
+#je{
+    texte-align:center;
+    background-color:brown;
+    font-size:xx-large;
+}
+/*selecteur descendant */
+.descendant-selector div p {
+background-color:yellow;
+}
+/*selecteur enfant (>) */
+.selecteur-enfant > div > p {
+background-color:red;
+}
+/*selecteur frère adjacent (+) */
+article + p {
+background-color:green
+}
+/*selecteur général de frère et soeur (-) */
+article ~ p {
+    background-color:blue
+}
+/*unvisited link*/
+a:link{
+    color:blue;
+}
+/* visited link */
+a:visited{
+    color: red;
+}
+/* mouse over link */
+a:hover{
+    color: yellow;
+}
+/* selected link */
+a:active{
+    color:green;
+}
+.para1{
+   padding:70px;
+   border: 2px solid red;
+}
+.para2{
+    margin: 70px;
+    border: 2px solid blue;
+}
+#mdiallo{
+    width:300px;
+    height:200px;
+    border: 2px solid red;
+}
+/*#second-span{
+    display: none;
+} */
+
+
+span{
+    display:block;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>LES BASES DU CSS/GOMYCODE</title>
+    <link rel="stylesheet" href="./bases.css">
+</head>
+<body>
+    <!--selecteur déscendant (espace)-->
+    <!--le sélecteur déscendant correspond à tous les éléments-->
+    <section class="descendant-selector">
+        <h1>selecteur déscendant (espace)</h1>
+    <div>
+        <p>paragraphe 1 in the div</p>
+        <p>paragraphe 2 in the div</p>
+        <!--Pas d'enfant mais déscendant-->
+        <section>
+            <p>paragraphe 3 in the div, inside a selection</p>
+        </section>
+    </div>
+    <p>paragraphe 4. not in the div</p>
+    <p>paragraphe 5. not in the div</p>
+    </section>
+    <!--selecteur enfant (>) (même concepte que les selecteurs descendants seulement qu'on prend ici les enfants directs)-->
+    <!--le selecteur d'enfant sélectionne tous les éléments. l'example suivant sélectionne tous les éléments <p><div>-->
+    <section class="selecteur-enfant">
+        <h1>selecteur enfant (>)</h1>
+        <div>
+            <p>paragraphe 1 in the div</p>
+            <p>paragraphe 2 in the div</p>
+            <!--Pas d'enfant mais déscendant-->
+            <section>
+                <p>paragraphe 3 in the div, inside a selection</p>
+            </section>
+        </div>
+        <p>paragraphe 4. not in the div</p>
+        <p>paragraphe 5. not in the div</p>
+    </section>
+    <!--sélecteur frère adjacent (+)-->
+    <!--le selecteur de frère adjacent est utilisé pour selectionner un autre élément qui se trouve directement après unn autre élément spécifique. les éléments frères doivent avoir le même parent et "adjacent" signifie "immediatement après". l'example suivant sélectionne le premier élément <p> placé immeadiatement après les élements articles-->
+        <section class="frereè-adjacent">
+            <!--selecteur général frère et soeur est le concepte que le frère adjacent-->
+            <h1>adjacent sibling selector (+)</h1>
+            <article>
+                    <p>paragraphe 1 in the article</p>
+                    <p>paragraphe 2 in the article</p>
+                </article>
+                        <p>paragraphe 3 after an article</p>
+                        <p>paragraphe 4 after an article</p>
+                    <article>
+                        <p>paragraphe 5 in the article</p>
+                        <p>paragraphe 6 in the article</p>
+                    </article>
+                    <p>paragraphe 7 after an article</p>
+                    <p>paragraphe 8 after an article</p>
+                    </section>
+                    <!--CSS pseudo class-->
+                    <a href="home" style="font-size:50px">test</a>
+                   
+        <!--Direct link-->
+    <h1 style="color:red; background-color: aqua;">welcome to go my code</h1>
+    <!--Link interne-->
+    <h2>welcome to our workshop</h2>
+    <h3>link interne de CSS</h3>
+    <style>
+        h2{
+            color:blue;
+            text-align: center;
+        }
+        h3{
+            background-color:bisque
+        }
+    </style>
+    <!--Link externe-->
+    <h4>Link avec css externe</h4>
+    <p id="je">je commence à comprendre l'utilisation de CSS externe</p>
+    <h5 class="class">Welcome to senegal, pays de la téranga</h5>
+<div class="model-box">
+<p class="para1">paragraphe avec 70 px padding</p>
+<p class="para2">paragraphe avec 70 px marging</p>
+<img src="./les enfants de Madame Diallo.jpeg" id="mdiallo" alt="">
+</div>
+<div>
+    <span>HTML</span><span id="second-span">CSS</span><span>Javascrip</span>
+</div>
+<div class="container">
+<div class="item1">item 1</div>
+<div class="item2">item 2</div>
+<div class="item3">item 3</div>
+</div>
+</body>
+</html>
